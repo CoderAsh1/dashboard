@@ -1,0 +1,71 @@
+.sidebar {
+  z-index: 10;
+  padding: 1rem;
+  flex-basis: 10rem;
+  font-size: 0.8rem;
+  background: rgb(32, 32, 32);
+  overflow: scroll;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: display 2s ease;
+}
+
+//  Reuseable Classes
+.menuIcon {
+  position: absolute;
+  left: 1.3rem;
+  top: 0.5rem;
+  z-index: 100;
+  padding: 0.2rem 0.4rem;
+  background: rgb(168, 168, 173);
+  border-radius: 0.3rem;
+}
+.hidden {
+  display: none;
+}
+.width {
+  width: 0;
+}
+li {
+  list-style: none;
+  font-size: 0.7rem;
+  margin-left: 1.2rem;
+}
+
+.option {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  li {
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+}
+h6 {
+  color: gray;
+  margin: 1rem 0;
+}
+.dropdown {
+  display: flex;
+  gap: 0.4rem;
+  margin: 1rem 0;
+}
+.upArrow,
+.downArrow {
+  margin-left: auto;
+  cursor: pointer;
+}
+div ::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 900px) {
+  .sidebar {
+    position: absolute;
+    height: 100vh;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

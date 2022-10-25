@@ -1,0 +1,62 @@
+.statistics {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  section {
+    padding: 1rem;
+    flex: 1;
+    border-radius: 0.6rem;
+    display: flex;
+    background: white;
+    flex-direction: column;
+    select {
+      border: none;
+      background: none;
+    }
+    .status {
+      display: flex;
+      border-top: 1px solid rgb(235, 235, 235);
+      justify-content: space-between;
+      margin-top: 1rem;
+      padding: 0 1rem;
+    }
+    h4 {
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    span {
+      font-size: 12px;
+      color: gray;
+    }
+    img {
+      width: 80%;
+      align-self: center;
+    }
+  }
+  .top_products {
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .detail {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        .sales {
+          margin-left: auto;
+          background: rgb(230, 230, 230);
+          padding: 0.4rem 1rem;
+          border-radius: 0.6rem;
+        }
+      }
+    }
+  }
+  color: #000;
+  border-radius: 0.6rem;
+}
+
+@media (max-width: 750px) {
+  .statistics {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,60 @@
+.statistics {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  color: #000;
+  border-radius: 0.6rem;
+}
+.statistics section {
+  padding: 1rem;
+  flex: 1;
+  border-radius: 0.6rem;
+  display: flex;
+  background: white;
+  flex-direction: column;
+}
+.statistics section select {
+  border: none;
+  background: none;
+}
+.statistics section .status {
+  display: flex;
+  border-top: 1px solid rgb(235, 235, 235);
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+.statistics section h4 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.statistics section span {
+  font-size: 12px;
+  color: gray;
+}
+.statistics section img {
+  width: 80%;
+  align-self: center;
+}
+.statistics .top_products .details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.statistics .top_products .details .detail {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.statistics .top_products .details .detail .sales {
+  margin-left: auto;
+  background: rgb(230, 230, 230);
+  padding: 0.4rem 1rem;
+  border-radius: 0.6rem;
+}
+
+@media (max-width: 750px) {
+  .statistics {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=statistics.css.map */
